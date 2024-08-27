@@ -148,6 +148,54 @@ nav {
 
 }
 
+footer {
+  background-color: #2B2A2A;
+  color: #F8F8F8;
+  padding: 1rem 0;
+}
+
+.bottomFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e8e8e82e;
+  padding: 0.5rem 1rem 0;
+}
+
+.bottomFooterLeftSide {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.topFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.topFooter h3 {
+  color: #dcdcdc;
+  margin-bottom: 0.5rem;
+}
+
+.topFooter p {
+  color: #727171;
+}
+
+.footerBtn{
+  background-color: #f9f9f9;
+  color: #2B2A2A;
+}
+
+.footerBtn:hover {
+  border-color: #f9f9f9;
+  color: #f9f9f9;
+}
+
 .hero {
   background-image: url('../public/back3.png');
   background-repeat: no-repeat;
@@ -575,5 +623,18 @@ nav {
   
   .carousell {
     width: 100%;
+  }
+
+  .topFooter, .bottomFooterLeftSide {
+    flex-direction: column;
+  }
+
+  .bottomFooter{
+    align-items: end;
+  }
+
+  .bottomFooterLeftSide{
+    align-items: start;
+    gap: 5px;
   }
 }
