@@ -71,6 +71,83 @@ ul {
   margin-bottom: 2rem;
 }
 
+header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  
+}
+
+.prenav {
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  
+}
+
+header .phoneNum span {
+  font-weight: 800;
+}
+
+.socialWrapper{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialIconsPrenav:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem;
+  color: #ebebeb;
+}
+
+.dropdownBtnWrapper{
+  position: relative;
+  overflow: visible;
+}
+
+.dropdownContentCont{
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 100px;
+  color: #2B2A2A;
+  background-color: #fefefe;
+}
+
+.dropdownContentCont li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.dropdownContentCont a {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdownContentCont a:hover {
+  transform: scale(1.1);
+
+}
+
 .hero {
   background-image: url('../public/back3.png');
   background-repeat: no-repeat;
@@ -215,6 +292,43 @@ ul {
   letter-spacing: -1px;
 }
 
+.contactSection{
+  background-color: #2B2A2A;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.contactSection div{
+  flex-basis: 40%;
+}  
+
+.contactSection h3{
+  line-height: unset;
+  color: #808080;
+  font-size: 30px;
+}
+
+.contactSection .btn {
+  color: #898989;
+  border-color: #666666;
+  padding: 2rem 6rem ;
+}
+
+.promoSection {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promoSection h2 {
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 1530px) {
   
 
@@ -298,6 +412,13 @@ ul {
   
   .carousell {
     width: 100%;
+  }
+
+  .contactSection{
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
   }
 }
 
@@ -388,7 +509,6 @@ ul {
   .carousell {
     width: 100%;
   }
-
 }
 
 
