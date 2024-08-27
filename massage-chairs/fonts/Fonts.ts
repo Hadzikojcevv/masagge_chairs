@@ -19,6 +19,6 @@ export const montserat = Montserrat({
   export const inter = Inter({
     weight: ['300','400','500', '700'],
     style: ['normal'],
-    subsets: ['latin'],
+    subsets: ['latin', 'cyrillic'],
     display: 'swap',
   })

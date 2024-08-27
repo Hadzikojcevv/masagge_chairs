@@ -1,18 +1,17 @@
-import { hind } from "@/fonts/Fonts";
+import { montserat } from "@/fonts/Fonts";
 
 type PropsType = {
   text: string;
+  color: "dark" | "light";
 };
 
-const SmallDescText = ({ text }: PropsType) => {
+const SmallDescText = ({ text, color = "dark" }: PropsType) => {
   const style = {
-    letterSpaccing: 2,
-    fontWeight: 300,
-    color: "#C2C2C2",
+    color: color === "dark" ? "#303030" : "#dbdbdb",
   };
 
   return (
-    <p className={`${hind.className} small-desc`} style={style}>
+    <p className={`${montserat.className} small-desc`} style={style}>
       {text}
     </p>
   );

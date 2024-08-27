@@ -6,14 +6,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-h1{
-  font-size: 128px;
+body {
+  background-color: #F8F8F8;
 }
 
-h2{
-  font-size: 36px;
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 120px;
+  color: #E8E8E8;
+  font-weight: 700;
+  letter-spacing: -30;
+}
+
+h2 {
+  font-size: 100px;
+  letter-spacing: -7px;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1.6px;
+  font-weight: 700;
+  line-height: 1.2px;
+  margin-bottom: 2rem;
 }
 
 .description {
@@ -21,17 +43,119 @@ h2{
 }
 
 .small-desc {
-  font-size: 18px;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-weight: 300;
 }
 
-@media only screen and (max-width: 1024px) {
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1.2rem 3.8rem;
+  border-width: 0.5px;
+  border-style: solid;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(211, 211, 211, 0.26);
+}
+
+li {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-bottom: 2rem;
+}
+
+.hero {
+  background-image: url('../public/back3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  padding: 0 12%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.heroSubtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #b9b9b9;
+  letter-spacing: -1
+}
+
+.lightSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  height: 100vh;
+}
+
+.lightSectionDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  /* Allow clicks to pass through */
+}
+
+.darkSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  height: 100vh;
+  background: radial-gradient(circle at 70%, #4A494A, #1B1B1B);
+}
+
+.darkSectionDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage {
+  width: 40%;
+}
+
+@media only screen and (max-width: 1530px) {
   
-  h1{
+
+  .lightSection,
+  .darkSection {
+    gap: 50px;
+  }
+
+  .productImage {
+    width: 500px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  h1 {
     font-size: 80px;
   }
 
-  h2{
-    font-size: 30px;
+  h2 {
+    font-size: 80px;
   }
 
   .description {
@@ -39,19 +163,27 @@ h2{
   }
 
   .small-desc {
-    font-size: 18px;
+    font-size: 15px;
   }
+
+  .hero {
+    padding: 8rem;
+  }
+
+  .heroSubtitle {
+    width: 60%;
+  }
+
+
+
 }
 
+@media only screen and (max-width: 950px) {
 
-@media only screen and (max-width: 768px) {
-  
-  h1{
-    font-size: 60px;
-  }
+  h2 {
+    font-size: 70px;
+    margin-bottom: 0.5rem;
 
-  h2{
-    font-size: 26px;
   }
 
   .description {
@@ -59,25 +191,125 @@ h2{
   }
 
   .small-desc {
-    font-size: 18px;
+    font-size: 15px;
+  }
+
+  .lightSection,
+  .darkSection {
+    gap: 20px;
+  }
+
+  .productImage {
+    width: 400px;
   }
 }
 
+
 @media only screen and (max-width: 768px) {
-  
-  h1{
+
+  h1 {
     font-size: 60px;
   }
 
-  h2{
-    font-size: 26px;
+  h2 {
+    font-size: 40px;
+    letter-spacing: 0;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
 
   .description {
-    font-size: 18px
+    font-size: 20px
   }
 
   .small-desc {
+    font-size: 13px;
+  }
+
+
+  .hero {
+    padding: 4rem;
+    height: 65vh;
+  }
+
+  .heroSubtitle {
+    width: 60%;
+    font-size: 20px;
+  }
+
+  .lightSection,
+  .darkSection {
+    gap: 0px;
+    /* height: 100vh; */
+    padding: 2rem;
+    height: auto;
+  }
+
+  /* .lightSection .productImage{
+    order: 2;
+  } */
+
+  .productImage {
+    width: 280px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 520px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 45px;
+    letter-spacing: 0px;
+
+  }
+
+  .btn {
+    padding: 0.8rem 3.4rem;
+  }
+
+  .lightSection {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 2rem;
+  }
+
+  .heroContentWrapper {
+    text-align: center;
+  }
+
+  .heroSubtitle {
+    width: 100%;
     font-size: 16px;
+    color: #E8E8E8;
+  }
+
+  .lightSection,
+  .darkSection {
+    flex-direction: column;
+    gap: 0px;
+    /* height: 100vh; */
+    padding: 2rem 0;
+    height: auto;
+  }
+
+  .lightSection .productImage {
+    order: 1;
+  }
+
+  .productImage {
+    width: 350px;
   }
 }

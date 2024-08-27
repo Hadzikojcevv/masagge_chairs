@@ -8,18 +8,12 @@ type PropsType = {
 const H2heading = ({ color, text }: PropsType) => {
   const style = {
     color: color,
-    letterSpacing: -3,
-    fontWeight: 500,
-    lineHeight: 0.8
   };
 
   return (
-    <h2
-      className={`${inter.className} font-extrabold text-8xl`}
-      style={style}
-    >
+    <h3 className={`${inter.className} font-extrabold text-8xl`} style={style}>
       {text}
-    </h2>
+    </h3>
   );
 };
 

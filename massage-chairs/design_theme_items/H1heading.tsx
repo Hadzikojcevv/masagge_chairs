@@ -6,20 +6,16 @@ type PropsType = {
   text: string;
 };
 
-const H1heading = ({ color, text }: PropsType) => {
+const H1heading = ({ color = "white", text }: PropsType) => {
   const style = {
-    fontWeight: 800,
     color: color,
-    letterSpacing: -7
+    fontWeight: 800,
   };
 
   return (
-    <h1
-      className={`${montserat.className}`}
-      style={style}
-    >
+    <h2 className={`${montserat.className}`} style={style}>
       {text}
-    </h1>
+    </h2>
   );
 };
 
