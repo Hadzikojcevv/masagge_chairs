@@ -15,8 +15,8 @@ const Prenav = () => {
               className="socialIconsPrenav"
               src={"/facebook.png"}
               alt="Facebook Icon"
-              width={35}
-              height={35}
+              width={25}
+              height={25}
             />
           </a>
           <a href="" target="_blank">
@@ -24,8 +24,8 @@ const Prenav = () => {
               className="socialIconsPrenav"
               src={"/instagram.png"}
               alt="instagram Icon"
-              width={35}
-              height={35}
+              width={25}
+              height={25}
             />
           </a>
         </div>

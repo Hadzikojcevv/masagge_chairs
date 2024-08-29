@@ -4,9 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import MassageChairDropdown from "./MassageChairDropdown";
+import { usePathname } from "next/navigation";
 
 const Nav = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const pathname = usePathname()
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -20,7 +22,7 @@ const Nav = () => {
 
   }, [window.scrollY]);
 
-  if (isVisible) {
+  if (isVisible && !pathname.includes('/')) {
     return (
       <motion.nav
         initial={{ opacity: 0, y: -100 }}
