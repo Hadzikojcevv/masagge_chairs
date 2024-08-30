@@ -507,6 +507,91 @@ footer {
   margin-top: 2rem;
 }
 
+/* SPECS */
+
+.specsSection {
+  background-color: #1b1b1b;
+  padding: 6rem 0;
+}
+
+.specsSection h3 {
+  color: #D9D9D9;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.specsTable {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.btnWrapper{
+  display: flex;
+  background-color: #D9D9D9;
+  color: #1B1B1B;
+}
+
+.tableBtn{
+  flex-basis: 33.333%;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tableBtn:hover{
+  background-color: #bebebe;
+}
+
+.tableBtn:nth-child(2){
+  border-right: 1px solid #3e3e3e38;
+  border-left: 1px solid #3e3e3e38;
+
+}
+
+.specsTableContent {
+  background-color: #2B2A2A;
+  padding: 1rem;
+  color: #BABABA;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.specsTableContent h6 {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.tableContentParagraph  {
+  color: #AEAAAA;
+  font-size: 20px;
+}
+
+.funcitonsListing {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  list-style-type: disc;
+  list-style-position: inside;
+  row-gap: 10px;
+}
+
+.funcitonsListing li {
+  flex-basis: 33.333%;
+  color: #AEAAAA;
+  font-size: 20px;
+}
+
+.funcitonsListing li:last-child {
+  flex-basis: auto;
+}
+
 @media only screen and (max-width: 1530px) {
 
 

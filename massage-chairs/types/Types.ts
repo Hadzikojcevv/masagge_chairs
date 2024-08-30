@@ -26,13 +26,17 @@ export type MassageChairType = {
     zeroGravDesc: string,
     specs: {
         info: {
-
+            title: string,
+            info1: string,
+            info2: string
         },
         functions: {
-
+            title: string,
+            funcs: string[]
         },
         techSpecs: {
-
+            title: string,
+            funcs: string[]
         }
     } 
 }
