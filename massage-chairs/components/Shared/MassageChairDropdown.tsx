@@ -1,6 +1,7 @@
 import { massageChairs } from "@/data/Data";
 import { montserat } from "@/fonts/Fonts";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -15,8 +16,9 @@ const MassageChairDropdown = () => {
           setisOpen(!isOpen);
         }}
       >
-        Масажери
+        <Image src={isOpen ?  "/cross.png" : '/bars.png' } alt="Menu" width={40} height={40}/>
       </button>
+      {/* <Link href={"#contact"}>Контакт</Link> */}
 
       {isOpen && (
         <motion.ul
@@ -26,6 +28,14 @@ const MassageChairDropdown = () => {
           exit={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.5 }}
         >
+          <li >
+              <Link
+                href={`#contact`}
+                className={`${montserat.className}`}
+              >
+                Контакт
+              </Link>
+            </li>
           {massageChairs.map((chair) => (
             <li key={chair.id}>
               <Link

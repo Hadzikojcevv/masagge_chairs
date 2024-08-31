@@ -1,6 +1,5 @@
 import { montserat } from "@/fonts/Fonts";
 import Image from "next/image";
-import Nav from "./Nav";
 
 const Prenav = () => {
   return (
@@ -30,7 +29,6 @@ const Prenav = () => {
           </a>
         </div>
       </div>
-      <Nav />
     </header>
   );
 };

@@ -2,6 +2,7 @@ import ListDescription from "@/design_theme_items/ListDescription";
 import { MassageChairType } from "@/types/Types";
 import Image from "next/image";
 import React from "react";
+import SocialIconsLister from "./SocialIconsLister";
 
 type HeroPropsType = {
   chair: MassageChairType;
@@ -22,16 +23,9 @@ const Hero = ({ chair }: HeroPropsType) => {
 
         <div className="contentRight">
           <h3>{chair.subTitle}</h3>
-          <div>share</div>
           <ListDescription items={chair.listItemDesc} color={"dark"} />
-          <button className="btn">BTN</button>
-          <div>
-            <span>icon</span>
-            <span>icon</span>
-            <span>icon</span>
-            <span>icon</span>
-            <span>icon</span>
-          </div>
+          <button className="btn">Контакт</button>
+          <SocialIconsLister icons={chair.headOnIcons} />
         </div>
       </div>
     </section>

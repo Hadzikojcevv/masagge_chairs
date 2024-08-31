@@ -1,6 +1,7 @@
 import LinkItem from "@/design_theme_items/LinkItem";
 import { montserat } from "@/fonts/Fonts";
 import Chevron from "./Chevron";
+import Nav from "../Shared/Nav";
 
 const Hero = () => {
 
@@ -13,6 +14,7 @@ const Hero = () => {
         <LinkItem path={"/"} text={"Детали"} variant={"light"} />
       </div>
       <Chevron />
+      <Nav />
     </section>
   );
 };

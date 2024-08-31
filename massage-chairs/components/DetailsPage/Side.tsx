@@ -1,6 +1,7 @@
 import H2heading from "@/design_theme_items/H2heading";
 import { MassageChairType } from "@/types/Types";
 import Image from "next/image";
+import SocialIconsLister from "./SocialIconsLister";
 
 type SidePropsType = {
   chair: MassageChairType;
@@ -22,7 +23,8 @@ const Side = ({ chair }: SidePropsType) => {
           />
           <div className="sideTopDescWrapperRightSide">
             <p className="headOnTopDescriptionParagraph sideDescriptionTop">{chair.sideDesc}</p>
-            <div>social icons</div>
+            <SocialIconsLister icons={chair.sideIcons} />
+
           </div>
         </div>
       </div>

@@ -9,13 +9,15 @@ import ProductCarousell from "@/components/Shared/ProductCarousell";
 import PromoSection from "@/components/Shared/PromoSection";
 import { massageChairs } from "@/data/Data";
 import { MassageChairType } from "@/types/Types";
-import { usePathname } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 
 const DetailsPage = () => {
   const param = usePathname().split("/")[1];
   const chair: MassageChairType | undefined = massageChairs.find(
     (chair) => chair.name.toLowerCase() === param.toLowerCase()
   );
+
+  if(!chair) redirect('/')
 
   if (chair) {
     return (

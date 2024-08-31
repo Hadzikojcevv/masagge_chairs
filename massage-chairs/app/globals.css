@@ -125,18 +125,29 @@ nav {
   color: #ebebeb;
 }
 
+.navigation {
+  position: absolute;
+  top:6%;
+  right: 1%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 .dropdownBtnWrapper {
   position: relative;
   overflow: visible;
 }
 
 .dropdownContentCont {
+  border: 1px solid rgba(219, 218, 218, 0.279);
+
   position: absolute;
-  top: 26px;
-  left: 0;
-  width: 100px;
-  color: #2B2A2A;
-  background-color: #fefefe;
+  top: 40px;
+  right: 0px;
+  width: 200px;
+  color: #e4e4e4;
+  background-color: #a9a7a73a;
 }
 
 .dropdownContentCont li {
@@ -559,6 +570,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  min-height: 280px;
 }
 
 .specsTableContent h6 {
@@ -590,6 +602,14 @@ footer {
 
 .funcitonsListing li:last-child {
   flex-basis: auto;
+}
+
+.socialIconLister{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 1530px) {
@@ -786,6 +806,19 @@ footer {
   
   .zeroGravParagraph {
     width: 100%;
+  }
+
+  .specsTable{
+    width: 90%;
+  }
+
+  .specsSection {
+    padding: 2rem 0;
+  }
+  
+  .specsSection h3 {
+    width: 90%;
+    text-align: left;
   }
 }
 
