@@ -1,7 +1,7 @@
 import ListDescription from "@/design_theme_items/ListDescription";
 import { MassageChairType } from "@/types/Types";
 import Image from "next/image";
-import React from "react";
+import ModalOpenerBtn from "../Shared/ModalOpenerBtn";
 import SocialIconsLister from "./SocialIconsLister";
 
 type HeroPropsType = {
@@ -9,6 +9,7 @@ type HeroPropsType = {
 };
 
 const Hero = ({ chair }: HeroPropsType) => {
+
   return (
     <section className="detailsHero">
       <h1 className="detailsHeroTitle">{chair.name}</h1>
@@ -24,7 +25,7 @@ const Hero = ({ chair }: HeroPropsType) => {
         <div className="contentRight">
           <h3>{chair.subTitle}</h3>
           <ListDescription items={chair.listItemDesc} color={"dark"} />
-          <button className="btn">Контакт</button>
+          <ModalOpenerBtn />
           <SocialIconsLister icons={chair.headOnIcons} />
         </div>
       </div>

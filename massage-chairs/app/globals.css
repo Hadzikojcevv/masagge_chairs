@@ -127,6 +127,7 @@ nav {
 
 .navigation {
   position: absolute;
+  z-index: 9999;
   top:6%;
   right: 1%;
   display: flex;
@@ -140,14 +141,10 @@ nav {
 }
 
 .dropdownContentCont {
-  border: 1px solid rgba(219, 218, 218, 0.279);
-
   position: absolute;
   top: 40px;
   right: 0px;
   width: 200px;
-  color: #e4e4e4;
-  background-color: #a9a7a73a;
 }
 
 .dropdownContentCont li {
@@ -612,6 +609,98 @@ footer {
   margin-top: 2rem;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.innerModal{
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.modalBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  align-self: flex-end;
+  background-color: #fa6767;
+  border-left: 1px solid #2b2a2a39;
+  border-bottom: 1px solid #2b2a2a39;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 0;
+}
+
+.modalTitle {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.modalMessageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 20px;
+}
+
+.form {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  border: 1px solid #3f3f3f2e;
+  border-radius: 3px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  margin: 0 auto;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.basicInputStyles {
+  font-weight: 300;
+
+  border: 1px solid #3f3f3f2e;
+  border-radius: 2px;
+  font-size: 18px;
+  outline: none;
+  width: 100%;
+  padding: 0.3rem;
+}
+
+
+.formBtn {
+  background-color: #08c75b;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #3e3e3e36;
+  border-radius: 3px;
+  color: white;
+}
+
 @media only screen and (max-width: 1530px) {
 
 
@@ -829,6 +918,10 @@ footer {
     font-size: 60px;
   }
 
+  .heroTitle {
+    font-size: 50px;
+  } 
+
   h2 {
     font-size: 40px;
     letter-spacing: 0;
@@ -938,6 +1031,10 @@ footer {
   h1 {
     font-size: 70px;
   }
+
+  .heroTitle {
+    font-size: 30px;
+  } 
 
   h2 {
     font-size: 45px;
@@ -1080,5 +1177,26 @@ footer {
   .sideDescriptionTop {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .dropdownContentCont{
+    width: 100vw;
+    top: 2px;
+    right: -3px;
+  }
+  
+  .btnWrapper{
+    flex-direction: column;
+  }
+
+  .tableBtn:nth-child(2){
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #3e3e3e38;
+    border-bottom: 1px solid #3e3e3e38;
+  }
+
+  .funcitonsListing li {
+    flex-basis: 100%;
   }
 }

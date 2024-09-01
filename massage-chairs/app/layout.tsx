@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Prenav from "@/components/Shared/Prenav";
 import Footer from "@/components/Shared/Footer";
+import Nav from "@/components/Shared/Nav";
+import ModalOpenerProvider from "@/contexts/ModalOpenerProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +21,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Prenav />
+        <ModalOpenerProvider>
+          <>
+            <Prenav />
+            <Nav />
 
-        {children}
-        <Footer />
+            {children}
+            <Footer />
+          </>
+        </ModalOpenerProvider>
       </body>
     </html>
   );
