@@ -118,7 +118,7 @@ const Form = () => {
           <textarea
             name="Порака"
             id="msg"
-            rows={5}
+            rows={2}
             className="basicInputStyles"
           ></textarea>
         </div>

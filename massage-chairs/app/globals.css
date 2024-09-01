@@ -87,7 +87,7 @@ header {
   left: 0;
   top: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 999;
 
 }
 
@@ -98,6 +98,10 @@ header {
   align-items: center;
   padding: 0.4rem 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
+}
+
+.mobileNav {
+  display: none;
 }
 
 header .phoneNum span {
@@ -610,6 +614,7 @@ footer {
 }
 
 .modal {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -619,7 +624,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 99999999;
 }
 
 .innerModal{
@@ -953,17 +958,85 @@ footer {
     font-size: 20px;
   }
 
+  .dropdownBtnWrapper{
+    display: none;
+  }
+
+  .mobileNav{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* MOBILE MENU */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9);
+    transition: visibility 0s, opacity 0.4s ease, transform 0.4s ease;
+    z-index: 999;
+  }
+  
+  .mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .menu-items li {
+    margin: 1rem 0;
+  }
+  
+  .menu-items li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  .menu-items li button{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-items li a:hover {
+    color: #ff6347;
+  }
+
   .lightSection,
   .darkSection {
     gap: 0px;
-    /* height: 100vh; */
     padding: 2rem;
     height: auto;
   }
-
-  /* .lightSection .productImage{
-    order: 2;
-  } */
 
   .productImage {
     width: 280px;
@@ -1027,6 +1100,10 @@ footer {
 
 
 @media only screen and (max-width: 520px) {
+
+  /* .prenav {
+    display: none;
+  } */
 
   h1 {
     font-size: 70px;

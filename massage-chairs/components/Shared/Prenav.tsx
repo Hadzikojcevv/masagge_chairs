@@ -1,5 +1,7 @@
 import { montserat } from "@/fonts/Fonts";
 import Image from "next/image";
+import MobileNav from "./MobileNav";
+import MassageChairDropdown from "./MassageChairDropdown";
 
 const Prenav = () => {
   return (
@@ -27,6 +29,8 @@ const Prenav = () => {
               height={25}
             />
           </a>
+          <MobileNav />
+          <MassageChairDropdown />
         </div>
       </div>
     </header>
