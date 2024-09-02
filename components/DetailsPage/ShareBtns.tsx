@@ -1,22 +1,32 @@
+'use client'
 import { montserat } from "@/fonts/Fonts";
-import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import {
-    FacebookMessengerShareButton,
-    FacebookShareButton,
-    ViberShareButton,
-    WhatsappShareButton
+  FacebookMessengerShareButton,
+  FacebookShareButton,
+  ViberShareButton,
+  WhatsappShareButton
 } from "react-share";
 
 import {
-    FacebookIcon,
-    FacebookMessengerIcon,
-    ViberIcon,
-    WhatsappIcon
+  FacebookIcon,
+  FacebookMessengerIcon,
+  ViberIcon,
+  WhatsappIcon
 } from "react-share";
 
 const ShareBtns = () => {
-  const router = useRouter();
 
+  const [url, setUrl] = useState('')
+
+  
+  useEffect(() => {
+
+    if(window) {
+      setUrl(window.location.href)
+    }
+
+  }, [])
 
   return (
     <div className="shareBtnsWrapper">
@@ -25,21 +35,21 @@ const ShareBtns = () => {
         fontSize: 14
       }}>Сподели: </p>
       <div className="shareIconsWrapper">
-        <FacebookShareButton url="http://localhost:3000/bl-h530">
+        <FacebookShareButton url={url.toString()}>
           {" "}
           <FacebookIcon size={30} round={true} className="shareIcon"/>{" "}
         </FacebookShareButton>
         <FacebookMessengerShareButton
-          url="http://localhost:3000/bl-h530"
+          url={url.toString()}
           appId=""
         >
           {" "}
           <FacebookMessengerIcon size={30} round={true} className="shareIcon"/>{" "}
         </FacebookMessengerShareButton>
-        <ViberShareButton url="http://localhost:3000/bl-h530">
+        <ViberShareButton url={url.toString()}>
           <ViberIcon size={30} round={true} className="shareIcon"/>
         </ViberShareButton>
-        <WhatsappShareButton url="http://localhost:3000/bl-h530">
+        <WhatsappShareButton url={url.toString()}>
           <WhatsappIcon size={30} round={true} className="shareIcon"/>
         </WhatsappShareButton>
       </div>
