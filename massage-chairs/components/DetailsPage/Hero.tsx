@@ -3,6 +3,7 @@ import { MassageChairType } from "@/types/Types";
 import Image from "next/image";
 import ModalOpenerBtn from "../Shared/ModalOpenerBtn";
 import SocialIconsLister from "./SocialIconsLister";
+import ShareBtns from "./ShareBtns";
 
 type HeroPropsType = {
   chair: MassageChairType;
@@ -24,6 +25,7 @@ const Hero = ({ chair }: HeroPropsType) => {
 
         <div className="contentRight">
           <h3>{chair.subTitle}</h3>
+          <ShareBtns />
           <ListDescription items={chair.listItemDesc} color={"dark"} />
           <ModalOpenerBtn />
           <SocialIconsLister icons={chair.headOnIcons} />

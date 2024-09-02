@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { ModalOpener } from "@/contexts/ModalOpenerContext";
 import { massageChairs } from "@/data/Data";
 import { montserat } from "@/fonts/Fonts";
@@ -13,7 +13,7 @@ const MassageChairDropdown = () => {
   const pathname = usePathname();
   const [isOpen, setisOpen] = useState(false);
   const [areChairsVisible, setAreChairsVisible] = useState(false);
-  const {openModal} = useContext(ModalOpener)
+  const { openModal } = useContext(ModalOpener);
   const isHomePage = Boolean(pathname === "/");
 
   const lightStyles = {
@@ -29,40 +29,22 @@ const MassageChairDropdown = () => {
   };
 
   useEffect(() => {
-    
-    setisOpen(false)
-    setAreChairsVisible(false)  
-
-  }, [pathname])
-  
+    setisOpen(false);
+    setAreChairsVisible(false);
+  }, [pathname]);
 
   return (
-    <div className="dropdownBtnWrapper" >
+    <div className="dropdownBtnWrapper">
       <button
         className="navButton"
         onClick={() => {
           setisOpen(!isOpen);
         }}
       >
-        <Image
-          src={
-            isHomePage
-              ? isOpen
-                ? "/cross.png"
-                : "/bars.png"
-              : isOpen
-              ? "/crossDark.png"
-              : "/barsDark.png"
-          }
-          alt="Menu"
-          width={40}
-          height={40}
-        />
+        Масажери
       </button>
 
       {isOpen && (
-
-        
         <motion.ul
           style={isHomePage ? lightStyles : darkStyles}
           className="dropdownContentCont"
@@ -71,22 +53,8 @@ const MassageChairDropdown = () => {
           exit={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.5 }}
         >
-          <li>
-            <button className={`${montserat.className}`} onClick={openModal}>
-              Контакт
-            </button>
-          </li>
 
-          <li>
-            <button
-              className={`${montserat.className}`}
-              onClick={() => setAreChairsVisible(!areChairsVisible)}
-            >
-              Масажери
-            </button>
-          </li>
-
-          {areChairsVisible &&
+          {
             massageChairs.map((chair) => (
               <li key={chair.id}>
                 <Link

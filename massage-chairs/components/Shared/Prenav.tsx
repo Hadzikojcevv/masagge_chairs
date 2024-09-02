@@ -2,15 +2,22 @@ import { montserat } from "@/fonts/Fonts";
 import Image from "next/image";
 import MobileNav from "./MobileNav";
 import MassageChairDropdown from "./MassageChairDropdown";
+import Link from "next/link";
+import DesktopNavRightSide from "./DesktopNavRightSide";
 
 const Prenav = () => {
   return (
     <header>
       <div className="prenav">
-        <a href="tel:" className={` ${montserat.className} phoneNum`}>
-          Контакт: <span>+389 77 123 456</span>
-        </a>
+        <DesktopNavRightSide />
+        <Link href={"/"} className="mobileLogo">
+          <Image src={"/logo.png"} alt="Logo" width={60} height={40} />
+        </Link>
+
         <div className="socialWrapper">
+          <a href="tel:" className={` ${montserat.className} phoneNum`}>
+            Контакт: <span>+389 77 123 456</span>
+          </a>
           <a href="" target="_blank">
             <Image
               className="socialIconsPrenav"
@@ -30,7 +37,6 @@ const Prenav = () => {
             />
           </a>
           <MobileNav />
-          <MassageChairDropdown />
         </div>
       </div>
     </header>
