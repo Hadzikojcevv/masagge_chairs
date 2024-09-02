@@ -4,12 +4,14 @@ import { massageChairs } from "@/data/Data";
 import { montserat } from "@/fonts/Fonts";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useContext, useEffect, useState } from "react";
 
 const MobileNav = () => {
   const { openModal } = useContext(ModalOpener);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [areChairsVisible, seAreChairsVisible] = useState(false);
+  const path = usePathname()
 
   const toggleMenu = () => {
     setIsNavOpen(!isNavOpen);
@@ -27,6 +29,12 @@ const MobileNav = () => {
       document.body.style.overflow = "auto";
     };
   }, [isNavOpen]);
+
+  useEffect(() => {
+    
+    setIsNavOpen(false)
+
+  }, [path])
 
   return (
     <div className="mobileNav">
