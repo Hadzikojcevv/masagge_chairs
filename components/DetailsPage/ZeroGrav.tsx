@@ -9,7 +9,7 @@ type ZeroGravPropsType = {
 const ZeroGrav = ({ chair }: ZeroGravPropsType) => {
   return (
     <section className="zeroGrav">
-      <div style={{width: '60%', margin: '0 auto'}}>
+      <div className="zeroGravTitles">
         <H2heading color={"#808080"} text={chair.zeroGravSubTitle} />
         <h4 className="sideTitle">{chair.zeroGravtitle}</h4>
       </div>
