@@ -1,4 +1,3 @@
-"use client";
 import HeadOn from "@/components/DetailsPage/HeadOn";
 import Hero from "@/components/DetailsPage/Hero";
 import Side from "@/components/DetailsPage/Side";
@@ -9,15 +8,33 @@ import ProductCarousell from "@/components/Shared/ProductCarousell";
 import PromoSection from "@/components/Shared/PromoSection";
 import { massageChairs } from "@/data/Data";
 import { MassageChairType } from "@/types/Types";
-import { redirect, usePathname } from "next/navigation";
+import { Metadata } from "next";
+import { redirect } from "next/navigation";
 
-const DetailsPage = () => {
-  const param = usePathname().split("/")[1];
+type MetadataFuncProps = {
+  params: {
+    title: string;
+  };
+};
+
+export const generateMetadata = ({ params }: MetadataFuncProps): Metadata => {
+  const chair: MassageChairType | undefined = massageChairs.find(
+    (chair) => chair.name.toLowerCase() === params.title.toLowerCase()
+  );
+
+  return {
+    title: chair?.name,
+    description: chair?.headOnDesc,
+  };
+};
+
+const DetailsPage = ({ params }: { params: { title: string } }) => {
+  const param = params.title;
   const chair: MassageChairType | undefined = massageChairs.find(
     (chair) => chair.name.toLowerCase() === param.toLowerCase()
   );
 
-  if(!chair) redirect('/')
+  if (!chair) redirect("/");
 
   if (chair) {
     return (

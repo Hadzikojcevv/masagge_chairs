@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://masagge-chairs.vercel.app/sitemap.xml

@@ -10,7 +10,24 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Масажери.мк",
-  description: "Автоматски Масажери - Automatic Massage Chairs",
+  description:
+    "Масажери.мк нуди автоматизирани масажни столици со целосна телесна масажа, загревање на грбот, ролери за стапала, воздушни перничиња, Bluetooth конекција и Hi-Fi аудио. Доживејте луксуз и релаксација во вашиот дом.",
+  keywords: [
+    "Масажери",
+    "Масажери.мк",
+    "Masazeri",
+    " Masazeri za telo",
+    " Masazeri za Stopala",
+    "Masazeri za Noze",
+    "Masazeri za Vrat",
+    "Masazeri za Grb",
+    "Masaza ",
+    "Масажа на тело",
+    "Масажа на грб",
+    "Масажа на лумбален дел",
+    "Масажа на нозе",
+    "Масажа на Стапалата",
+  ],
 };
 
 export default function RootLayout({
