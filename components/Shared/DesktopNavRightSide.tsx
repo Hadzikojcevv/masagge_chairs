@@ -13,6 +13,9 @@ const DesktopNavRightSide = () => {
       <Link href={"/"}>
         <Image src={"/logo.png"} alt="Logo" width={80} height={40} />
       </Link>
+      <Link href={"/"}>
+        Почетна
+      </Link>
       <button onClick={openModal}>Контакт</button>
       <MassageChairDropdown />
     </div>
