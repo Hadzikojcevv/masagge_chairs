@@ -19,7 +19,7 @@ const HeadOn = ({ chair }: HeadOnPropsType) => {
         <Image
           src={chair.gallery.headOn}
           alt={chair.name}
-          width={700}
+          width={500}
           height={700}
           className="headOnImage"
         />
