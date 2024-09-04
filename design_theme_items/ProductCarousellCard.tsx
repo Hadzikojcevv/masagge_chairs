@@ -11,7 +11,7 @@ type ProductCarousellCardPropsType = {
 const ProductCarousellCard = ({chair}:ProductCarousellCardPropsType) => {
   return (
     <div className="carousellCard">
-        <Image src={chair.gallery.product} alt={chair.name} width={250} height={200}/>
+        <Image src={chair.gallery.product} alt={chair.name} width={250} height={250} style={{maxHeight: 250}}/>
         <h3 className={`${montserat.className}`}>{chair.name}</h3>
         <p className={`${inter.className}`}>{chair.subTitle}</p>
         <LinkItem path={`/${chair.name}`} text={"Детали"} variant={"dark"} />

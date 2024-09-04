@@ -35,7 +35,7 @@ const ShareBtns = () => {
         fontSize: 14
       }}>Сподели: </p>
       <div className="shareIconsWrapper">
-        <FacebookShareButton url={url.toString()}>
+        <FacebookShareButton url={url.toString()} className="shareBtn">
           {" "}
           <FacebookIcon size={30} round={true} className="shareIcon"/>{" "}
         </FacebookShareButton>

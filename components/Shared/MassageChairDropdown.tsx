@@ -1,5 +1,4 @@
 "use client";
-import { ModalOpener } from "@/contexts/ModalOpenerContext";
 import { massageChairs } from "@/data/Data";
 import { montserat } from "@/fonts/Fonts";
 
@@ -7,13 +6,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const MassageChairDropdown = () => {
   const pathname = usePathname();
   const [isOpen, setisOpen] = useState(false);
   const [areChairsVisible, setAreChairsVisible] = useState(false);
-  const { openModal } = useContext(ModalOpener);
   const isHomePage = Boolean(pathname === "/");
 
   const lightStyles = {
@@ -37,11 +35,13 @@ const MassageChairDropdown = () => {
     <div className="dropdownBtnWrapper">
       <button
         className="navButton"
+        style={{display: 'flex', justifyContent:'space-between', alignItems: 'center'}}
         onClick={() => {
           setisOpen(!isOpen);
         }}
       >
-        Масажери
+        <span>Масажери</span>
+        <Image src={isOpen ? "/chevronUpDark.png" : '/chevronDownDark .png'} alt="Chevron" width={15} height={15} />
       </button>
 
       {isOpen && (

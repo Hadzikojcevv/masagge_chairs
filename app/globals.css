@@ -360,6 +360,7 @@ footer {
   align-items: center;
   justify-content: center;
   width: 90%;
+  height: 415px;
   margin: 0 auto;
   padding: 2rem 0;
   box-shadow: 0px 6px 20.600000381469727px 0px rgba(0, 0, 0, 25%);
@@ -373,7 +374,7 @@ footer {
 }
 
 .carousellCard p {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   color: #808080;
@@ -536,13 +537,13 @@ footer {
 }
 
 .sideTopDescWrapperRightSide {
-  flex-basis: 50%;
+  flex-basis: 60%;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
 .sideDescriptionTop {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1344,5 +1345,9 @@ footer {
 
   .funcitonsListing li {
     flex-basis: 100%;
+  }
+
+  .react-multi-carousel-arrow {
+    display: none;
   }
 }
