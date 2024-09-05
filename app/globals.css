@@ -476,6 +476,8 @@ footer {
   border-radius: 3px;
   padding: 0.5rem 1rem;
   display: inline-block;
+  margin-bottom: 2rem;
+
 }
 
 .colorVariantsWrapper{
@@ -1217,6 +1219,7 @@ footer {
   .availability {
     font-size: 15px;
     margin-bottom: 2rem;
+    
   }
 
   .colorVariantsWrapper{
