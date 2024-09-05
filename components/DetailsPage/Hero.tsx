@@ -19,7 +19,6 @@ const Hero = ({ chair }: HeroPropsType) => {
 
       <div className="contentWrapper">
         <div style={{ position: "relative" }}>
-          <ChairAvailabilityDisplayer availability={chair.availability} />
           <ColorVariants colors={chair.colorVariants} />
 
           <Image
@@ -38,6 +37,7 @@ const Hero = ({ chair }: HeroPropsType) => {
           <ModalOpenerBtn />
           <SocialIconsLister icons={chair.headOnIcons} />
           <PricePreviewer price={chair.price} />
+          <ChairAvailabilityDisplayer availability={chair.availability} />
         </div>
       </div>
     </section>
