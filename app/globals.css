@@ -690,7 +690,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  min-height: 280px;
+  min-height: 420px;
 }
 
 .specsTableContent h6 {
