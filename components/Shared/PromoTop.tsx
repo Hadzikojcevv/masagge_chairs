@@ -22,6 +22,12 @@ const PromoTop = () => {
         setTitle(titles[count]);
       }
     }, 2000);
+    
+    return () => {
+      
+      clearInterval(interval)
+    }
+
   }, []);
 
   return (

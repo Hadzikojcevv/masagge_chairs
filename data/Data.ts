@@ -5,6 +5,9 @@ export const massageChairs: MassageChairType[] = [
     id: 1,
     name: "BL-5",
     subTitle: "Луксузна Столица за Масажа",
+    price: 2360,
+    availability: false,
+    colorVariants: [{colorCode: '#94F8FA', colorName: 'Сина'},{colorCode: '#DD8855', colorName: 'Дрвено Кафеава'},{colorCode: '#4C4C56', colorName: 'Црна'}],
     listItemDesc: [
       "4D манипулација - Масажа на целото тело, ролери за раце, нозе и стапала",
       "48 Воздушни Перничиња - Греење на грб до 45°C",
@@ -77,6 +80,9 @@ export const massageChairs: MassageChairType[] = [
     id: 2,
     name: "Vending",
     subTitle: "Комерцијална Столица за Масажа",
+    price: 2180,
+    availability: true,
+    colorVariants: [{colorCode: '#4C4C56', colorName: 'Црна'}],
     listItemDesc: [
       "4D манипулација - Масажа на целото тело",
       "10 модови - 3 интензитети",
@@ -149,6 +155,9 @@ export const massageChairs: MassageChairType[] = [
     id: 3,
     name: "BL-4",
     subTitle: "супериорно масажно искуство",
+    price: 1558,
+    availability: true,
+    colorVariants: [{colorCode: '#695D5F', colorName: 'Кафеава'}],
     listItemDesc: [
       "SL Лента - 135цм, Ролери за Стапала",
       "45°C - Греење на грб и листови",
@@ -221,6 +230,9 @@ export const massageChairs: MassageChairType[] = [
     id: 4,
     name: "BL-3",
     subTitle: "Бескрајни режими на релаксација",
+    price: 1230,
+    availability: true,
+    colorVariants: [{colorCode: '#4C4C56', colorName: 'Black'}],
     listItemDesc: [
       "2D манипулација - 20 Airbags",
       "Ролери за стапала - Греење на половица и листови до 45°C",
@@ -297,6 +309,9 @@ export const massageChairs: MassageChairType[] = [
     id: 5,
     name: "BL-1",
     subTitle: "Масажна Столица со U-Shape Перница",
+    price: 950,
+    availability: true,
+    colorVariants: [{colorCode: '#E5CDC5', colorName: 'Златна/Крем'}],
     listItemDesc: [
       "Airbags - 3 интензитети на стисок",
       "Греење на грб и листови до 45°C",
@@ -369,6 +384,9 @@ export const massageChairs: MassageChairType[] = [
     id: 6,
     name: "BL-2",
     subTitle: "Масажна Столица со U-Shape Перница",
+    price: 1050,
+    availability: true,
+    colorVariants: [{colorCode: '#4C4C56', colorName: 'Црна'}],
     listItemDesc: [
       "Airbags - 3 интензитети на стисок",
       "Греење на грб и листови до 45°C",

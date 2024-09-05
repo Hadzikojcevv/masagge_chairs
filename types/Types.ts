@@ -2,6 +2,9 @@ export type MassageChairType = {
     id: number,
     name: string,
     subTitle: string,
+    price: number,
+    availability: boolean,
+    colorVariants: {colorCode: string, colorName: string}[]
     listItemDesc: string[],
     gallery: {
         product: string,
