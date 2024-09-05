@@ -18,7 +18,7 @@ const ContactSection = () => {
           Дали ви е потребна експертска препорака  за вашата идеална масажна
           фотелја?
         </h3>
-        <p className={`${montserat.className} aboutDesc`}>
+        <p className={`${montserat.className}`} style={{color: '#b9b9b9', fontSize: 22, fontWeight: 300}}>
           {" "}
           Оставете го тоа на тимот на Масажери.мк
         </p>
