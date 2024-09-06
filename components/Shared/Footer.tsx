@@ -18,20 +18,11 @@ const Footer = () => {
           <p className={`${montserat.className}`}>Столици за Масажа</p>
         </div>
         <div className="socialWrapper">
-          <a href="/" target="_blank">
+          <a href="https://www.facebook.com/profile.php?id=61564838936840" target="_blank">
             <Image
               className="socialIconsPrenav"
               src={"/facebook.png"}
               alt="Facebook Icon"
-              width={35}
-              height={35}
-            />
-          </a>
-          <a href="/" target="_blank">
-            <Image
-              className="socialIconsPrenav"
-              src={"/instagram.png"}
-              alt="instagram Icon"
               width={35}
               height={35}
             />

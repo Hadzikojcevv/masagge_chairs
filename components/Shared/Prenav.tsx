@@ -15,23 +15,14 @@ const Prenav = () => {
         </Link>
 
         <div className="socialWrapper">
-          <a href="tel:" className={` ${montserat.className} phoneNum`}>
-            Контакт: <span>+389 77 123 456</span>
+          <a href="tel:+38975477444" className={` ${montserat.className} phoneNum`}>
+            Контакт: <span>+389 075 477 444</span>
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.facebook.com/profile.php?id=61564838936840" target="_blank">
             <Image
               className="socialIconsPrenav"
               src={"/facebook.png"}
               alt="Facebook Icon"
-              width={25}
-              height={25}
-            />
-          </a>
-          <a href="" target="_blank">
-            <Image
-              className="socialIconsPrenav"
-              src={"/instagram.png"}
-              alt="instagram Icon"
               width={25}
               height={25}
             />
