@@ -17,6 +17,16 @@ const Footer = () => {
           <p className={`${montserat.className}`}>©2024 Масажери.мк</p>
           <p className={`${montserat.className}`}>Столици за Масажа</p>
         </div>
+        {/* <a href="https://www.facebook.com/profile.php?id=61564838936840" target="_blank" style={{display: 'flex', gap:10}}>
+            Изработено од:
+            <Image
+              className="socialIconsPrenav"
+              src={"/zicLogo.png"}
+              alt="Zic Group"
+              width={125}
+              height={35}
+            />
+          </a> */}
         <div className="socialWrapper">
           <a href="https://www.facebook.com/profile.php?id=61564838936840" target="_blank">
             <Image

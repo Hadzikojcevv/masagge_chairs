@@ -160,7 +160,7 @@ export const massageChairs: MassageChairType[] = [
     name: "BL-4",
     subTitle: "супериорно масажно искуство",
     price: 1558,
-    availability: true,
+    availability: false,
     colorVariants: [{colorCode: '#695D5F', colorName: 'Кафеава'}],
     listItemDesc: [
       "SL Лента - 135цм, Ролери за Стапала",
@@ -237,7 +237,7 @@ export const massageChairs: MassageChairType[] = [
     name: "BL-3",
     subTitle: "Бескрајни режими на релаксација",
     price: 1230,
-    availability: true,
+    availability: false,
     colorVariants: [{colorCode: '#4C4C56', colorName: 'Black'}],
     listItemDesc: [
       "2D манипулација - 20 Airbags",
