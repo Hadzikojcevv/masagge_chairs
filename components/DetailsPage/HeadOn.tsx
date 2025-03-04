@@ -21,7 +21,7 @@ const HeadOn = ({ chair }: HeadOnPropsType) => {
           alt={chair.name}
           width={500}
           height={700}
-          className="headOnImage"
+          className="headOnImage productImageOpaciteRadialGradient"
         />
       </div>
       <div className="headOnBottom">

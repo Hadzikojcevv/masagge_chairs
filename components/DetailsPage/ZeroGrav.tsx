@@ -19,6 +19,7 @@ const ZeroGrav = ({ chair }: ZeroGravPropsType) => {
         alt={chair.name}
         width={700}
         height={700}
+        className="productImageOpaciteRadialGradient"
       />
       <p className="headOnTopDescriptionParagraph zeroGravParagraph">{chair.zeroGravDesc}</p>
     </section>

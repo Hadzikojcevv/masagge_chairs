@@ -26,7 +26,7 @@ const Hero = ({ chair }: HeroPropsType) => {
             alt={chair.name}
             width={600}
             height={700}
-            className="detailsHeroImage"
+            className="detailsHeroImage productImageOpaciteRadialGradient"
           />
         </div>
 

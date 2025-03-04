@@ -7,6 +7,7 @@ import Image from "next/image";
 import ListDescription from "./ListDescription";
 import LinkItem from "./LinkItem";
 import { motion } from "framer-motion";
+import ChairAvailabilityDisplayer from "./ChairAvailabilityDisplayer";
 
 type LightChairSectionPropsType = {
   chair: MassageChairType;
@@ -22,12 +23,14 @@ const LightChairSection = ({ chair }: LightChairSectionPropsType) => {
         alt={chair.name}
         width={750}
         height={670}
-        className="productImage"
+        className="productImage productImageOpaciteRadialGradient"
       />
       <motion.div className="lightSectionDesc">
         <H1heading color={"#2B2B2B"} text={chair.name} />
         <H2heading color={"#808080"} text={chair.subTitle} />
         <ListDescription color={'dark'} items={chair.listItemDesc} />
+        <ChairAvailabilityDisplayer availability={chair.availability} textColor="#808080"/>
+
         <LinkItem
         
           path={`/${chair.name.toLowerCase()}`}

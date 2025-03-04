@@ -20,6 +20,7 @@ const Side = ({ chair }: SidePropsType) => {
             alt={chair.name}
             width={400}
             height={400}
+            className="productImageOpaciteRadialGradient"
           />
           <div className="sideTopDescWrapperRightSide">
             <p className="headOnTopDescriptionParagraph sideDescriptionTop">{chair.sideDesc}</p>
