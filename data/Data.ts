@@ -5,8 +5,8 @@ export const massageChairs: MassageChairType[] = [
     id: 1,
     name: "BL-5",
     subTitle: "Луксузна Столица за Масажа",
-    price: 2360,
-    availability: false,
+    price: 2890,
+    availability: true,
     colorVariants: [{colorCode: '#94F8FA', colorName: 'Сина'},{colorCode: '#DD8855', colorName: 'Дрвено Кафеава'},{colorCode: '#4C4C56', colorName: 'Црна'}],
     listItemDesc: [
       "4D манипулација - Масажа на целото тело, ролери за раце, нозе и стапала",
@@ -49,7 +49,7 @@ export const massageChairs: MassageChairType[] = [
         info2:
           "Со повеќе од 20 масажни функции, прецизна масажа, истегнување и Zero Gravity функцијата, како и компактни димензии и современи технологии како безжично полнење и Bluetooth го прават идеален за секој дом.",
           info3: "BL-5 столицата за мазажа е достапна по нарачка во следниве варијанти односно бои: Сина, Дрвено-Кафеава и Црна.",
-          info4: "Цена: 2,360.00€ + ДДВ."
+          info4: "Цена: 2,890.00€ + ДДВ."
       },
       techSpecs: {
         title: "Технички Спецификации",
