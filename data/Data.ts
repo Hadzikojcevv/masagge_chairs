@@ -7,7 +7,9 @@ export const massageChairs: MassageChairType[] = [
     subTitle: "Луксузна Столица за Масажа",
     price: 2890,
     availability: true,
-    colorVariants: [{colorCode: '#4C4C56', colorName: 'Црна'}],
+    colorVariants: [
+      // {colorCode: '#4C4C56', colorName: 'Црна'}, 
+      {colorCode: '#695D5F', colorName: 'Кафеава'}],
     listItemDesc: [
       "4D манипулација - Масажа на целото тело, ролери за раце, нозе и стапала",
       "48 Воздушни Перничиња - Греење на грб до 45°C",
@@ -473,7 +475,7 @@ export const massageChairs: MassageChairType[] = [
     subTitle: "Масажна Столица ",
     price: 1610,
     availability: true,
-    colorVariants: [{colorCode: '#3A434D', colorName: 'Црна'}],
+    colorVariants: [{colorCode: '#2E3368', colorName: 'Темно-Сина'}],
     listItemDesc: [
       "20 Airbags - 3 интензитети",
       "Греење на грб до 45°C",
